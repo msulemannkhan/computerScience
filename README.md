@@ -19,7 +19,7 @@ An abacus is a very old tool used for math. It is still used in some parts of th
 * The computer "runs" a long series of instructions.
 * Purely mechanical.
 <p align="center">
-  <img width="460" height="300" src="https://web.stanford.edu/class/cs101/code-1.png">
+  <img src="https://web.stanford.edu/class/cs101/code-1.png">
 </p>
 
 #### Fundamental Equation of Computers
@@ -34,3 +34,12 @@ A CPU understands a low level "machine code" language (also known as "native cod
 The machine code defines a set of individual instructions. Each machine code instruction is extremely primitive, such as adding two numbers or testing if a number is equal to zero. When stored, each instruction takes up just a few bytes. When we said earlier that a CPU can execute 2 billion operations per second, we meant that the CPU can execute 2 billion lines of machine code per second.
 
 A program, such as Firefox, is made up of a sequence of millions of these very simple machine code instructions. It's a little hard to believe that something as rich and complicated as Firefox can be built up out of instructions that just add or compare two numbers, but that is how it works. A sand sculpture can be rich and complicated when viewed from a distance, even though the individual grains of sand are extremely simple.
+
+
+#### How Does a Program Run?
+The CPU runs instructions using a "fetch-execute" cycle: the CPU gets the first instruction in the sequence, executes it (adding two numbers or whatever), then fetches the next instruction and executes it, and so on. Some of the instructions affect the order that the CPU takes through the instruction sequence. For example, an instruction might direct the CPU to jump back to an earlier point in the instruction sequence (loops are implemented this way), or to skip over the next instruction if a particular condition is true (if-statements are implemented this way).
+<p align="center">
+  <img src="https://web.stanford.edu/class/cs101/software-cpu.png">
+</p>
+
+
