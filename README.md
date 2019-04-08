@@ -24,3 +24,8 @@ An abacus is a very old tool used for math. It is still used in some parts of th
 
 #### Fundamental Equation of Computers
 Computer = Powerful + Stupid
+
+#### CPU - Machine Code
+"Software" is the general category of code which runs on the hardware. The common case is a "program" like Firefox -- software you run on your computer to solve a particular problem. A computer can run multiple programs at the same time and is responsible for keeping their memory separate.
+
+A CPU understands a low level "machine code" language (also known as "native code"). The language of the machine code is hardwired into the design of the CPU hardware; it is not something that can be changed at will. Each family of compatible CPUs (e.g. the very popular Intel x86 family) has its own, idiosyncratic machine code which is not compatible with the machine code of other CPU families.
